@@ -1,0 +1,136 @@
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  --transparentWhite:hsla(0, 0%, 100%, 0.75);
+  --veryLightGrey:hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 80%;
+  height: 100vh;
+  margin: 50px auto;  
+  background-color: var(--veryLightGrey);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1,
+.card2,
+.card3 {
+  padding: 20px 35px 60px 35px;
+}
+
+.card1 {
+  background-color: var(--brightOrange);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.card2 {
+  background-color: var(--darkCyan);
+}
+.card3 {
+  background-color: var(--veryDarkCyan);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.card1 img,
+.card2 img,
+.card3 img {
+  margin:20px 0 0 0;
+  padding: 0 0 10px 0;
+}
+
+.card1 h2,
+.card2 h2,
+.card3 h2 {
+  margin: 15px 0 25px 0;
+  font-family:'Big Shoulders Display', cursive;
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--veryLightGrey);
+}
+
+.card1 p,
+.card2 p,
+.card3 p {
+  font-family:'Lexend Deca', sans-serif;
+  margin-bottom: 90px;
+  padding-right: 47px;
+  color: var(--transparentWhite);
+  line-height: 1.5;
+}
+
+.card1 P{
+  padding-right: 40px;
+}
+
+.learnMore a {
+  padding: 10px 25px;
+  margin-bottom: 30px;
+  background-color: var(--veryLightGrey);
+  text-decoration: none;
+  border-radius: 25px;
+  border: none;
+  font-family:'Lexend Deca', sans-serif; 
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.card1 a{
+  color: var(--brightOrange);
+}
+
+.card2 a{
+  color: var(--darkCyan);
+}
+.card3 a{
+  color: var(--veryDarkCyan);
+}
+
+.card1 a:hover{
+  background-color: var(--brightOrange);
+  border:2px solid var(--veryLightGrey);
+  color: var(--veryLightGrey);
+}
+
+.card2 a:hover{
+  background-color: var(--darkCyan);
+  border:2px solid var(--veryLightGrey);
+  color: var(--veryLightGrey);
+}
+
+.card3 a:hover{
+  background-color: var(--veryDarkCyan);
+  border:2px solid var(--veryLightGrey);
+  color: var(--veryLightGrey);
+}
+
+@media(max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height:250vh;
+  }
+  .card1 p,
+  .card2 p,
+  .card3 p {
+    margin-bottom: 10px;
+    padding: 0 0 25px 0;
+    font-size: 15px;
+  }
+
+}
+
+
